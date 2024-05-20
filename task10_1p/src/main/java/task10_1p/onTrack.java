@@ -43,10 +43,7 @@ public class onTrack {
     public List<String> getChatHistory() {
         return chatHistory;
     }
-//    public int getDaysRemaining() {
-//        long timeDiff = dueDate.getTime() - System.currentTimeMillis();
-//        return (int) (timeDiff / (1000 * 60 * 60 * 24));
-//    }
+
     public int getDaysRemaining() {
         long timeDiff = dueDate.getTime() - System.currentTimeMillis();
         long daysRemaining = TimeUnit.MILLISECONDS.toDays(timeDiff);
